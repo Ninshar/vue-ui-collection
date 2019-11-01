@@ -1,9 +1,9 @@
 # vue-ui-collection
 
 ## Install
-、、、
-  npm i vue-ui-collection -S
-、、、
+```
+npm i vue-ui-collection -S
+```
 
 ## Quick Start
 ``` javascript
@@ -26,6 +26,8 @@ new Vue({
   }
 })
 、、、
+
+## html
 、、、
   <dialogUpload :dialog-visible="dialogVisible" @complete="onComplete" />
 、、、
