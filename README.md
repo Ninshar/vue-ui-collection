@@ -25,8 +25,7 @@ new Vue({
     }
   }
 })
-、、、
-
+```
 ## html
 、、、
   <dialogUpload :dialog-visible="dialogVisible" @complete="onComplete" />
