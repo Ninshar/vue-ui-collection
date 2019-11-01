@@ -27,9 +27,9 @@ new Vue({
 })
 ```
 ## html
-、、、
+```html
   <dialogUpload :dialog-visible="dialogVisible" @complete="onComplete" />
-、、、
+```
 
 ## Project setup
 ```
