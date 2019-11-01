@@ -19,12 +19,29 @@
 
 <script>
 /* eslint-disable */
+// const Vue = window.Vue;
+import {
+  Dialog,
+  Button,
+  Upload,
+  MessageBox,
+} from 'element-ui';
+// Vue.use(Dialog);
+// Vue.use(Button);
+// Vue.use(Upload);
+// Vue.prototype.$confirm = MessageBox.confirm;
 export default {
   name: "dialogUpload",
   data() {
     return {
       fileList:[]
     };
+  },
+  components:{
+    Dialog,
+    Button,
+    Upload,
+    MessageBox,
   },
   props: {
     dialogVisible: {
@@ -40,7 +57,7 @@ export default {
       this.fileList = fileList;
     },
     beforeRemove(file, fileList) {
-      return this.$confirm(`确定移除 ${file.name}？`);
+      return this.$MessageBox.confirm(`确定移除 ${file.name}？`);
     },
     complete(){
       this.$emit('complete', this.fileList);
