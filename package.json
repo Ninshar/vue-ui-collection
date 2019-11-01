@@ -1,6 +1,6 @@
 {
   "name": "vue-ui-collection",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "index.js",
   "description": "vue ui 的集合",
   "scripts": {
