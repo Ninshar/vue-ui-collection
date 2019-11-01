@@ -1,32 +1,33 @@
 # vue-ui-collection
 
-## 使用方法
+## Install
 、、、
-  npm i vue-ui-collection
+  npm i vue-ui-collection -S
 、、、
-、、、
-  1. import dialogUpload from 'vue-ui-collection';
 
-  2. new Vue({
-      data(){
-        return{
-          dialogVisible: true
-        }
-      },
-      components: {
-        dialogUpload
-      },
-      methods: {
-        <!-- 点击完成获取上传 fileList 关闭弹层 -->
-        onComplete(fileList) {
-          this.dialogVisible = false;
-        }
-      }
-    })
-  
-  3. 
+## Quick Start
+``` javascript
+import dialogUpload from 'vue-ui-collection';
+
+new Vue({
+  data(){
+    return{
+      dialogVisible: true
+    }
+  },
+  components: {
+    dialogUpload
+  },
+  methods: {
+    <!-- 点击完成获取上传 fileList 关闭弹层 -->
+    onComplete(fileList) {
+      this.dialogVisible = false;
+    }
+  }
+})
+、、、
+、、、
   <dialogUpload :dialog-visible="dialogVisible" @complete="onComplete" />
-
 、、、
 
 ## Project setup
