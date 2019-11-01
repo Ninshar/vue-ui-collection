@@ -6,16 +6,12 @@
 
 <script>
 /* eslint-disable */
-import dialogUpload from "./components/dialogUpload.vue";
 export default {
   name: "app",
   data() {
     return {
       dialogVisible: true
     };
-  },
-  components: {
-    dialogUpload
   },
   methods: {
     onComplete(fileList) {

@@ -19,13 +19,13 @@
 
 <script>
 /* eslint-disable */
-// const Vue = window.Vue;
-import {
-  Dialog,
-  Button,
-  Upload,
-  MessageBox,
-} from 'element-ui';
+// import Vue from 'Vue'
+// import {
+//   Dialog,
+//   Button,
+//   Upload,
+//   MessageBox,
+// } from 'element-ui';
 // Vue.use(Dialog);
 // Vue.use(Button);
 // Vue.use(Upload);
@@ -38,10 +38,10 @@ export default {
     };
   },
   components:{
-    Dialog,
-    Button,
-    Upload,
-    MessageBox,
+    // Dialog,
+    // Button,
+    // Upload,
+    // MessageBox.confirm
   },
   props: {
     dialogVisible: {
