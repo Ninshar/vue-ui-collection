@@ -7,28 +7,30 @@ npm i vue-ui-collection -S
 
 ## Quick Start
 ``` javascript
-import dialogUpload from 'vue-ui-collection';
+import {collection} from 'vue-ui-collection';
+import 'vue-ui-collection/dist/vue-ui-collection.css';
 
-new Vue({
-  data(){
-    return{
-      dialogVisible: true
+Vue.use(collection);
+
+  export default {
+    name: "app",
+    data() {
+      return {
+        dialogVisible: true
+      };
+    },
+    methods: {
+      onComplete(fileList) {
+        this.dialogVisible = false;
+      }
     }
-  },
-  components: {
-    dialogUpload
-  },
-  methods: {
-    <!-- 点击完成获取上传 fileList 关闭弹层 -->
-    onComplete(fileList) {
-      this.dialogVisible = false;
-    }
-  }
-})
+  };
 ```
 ## html
 ```html
-  <dialogUpload :dialog-visible="dialogVisible" @complete="onComplete" />
+  <template>
+    <dialogUpload :visible="dialogVisible" @complete="onComplete" @cancel="dialogVisible = false" />
+  </template>
 ```
 
 ## Project setup

@@ -3,7 +3,7 @@ import {
   Dialog,
   Button,
   Upload,
-//   MessageBox,
+  MessageBox,
 } from 'element-ui';
 
 // 以数组的结构保存组件，便于遍历
@@ -23,7 +23,7 @@ const install = function(Vue) {
         Vue.component(component.name, component)
     })
 
-    // Vue.prototype.$confirm = MessageBox.confirm;
+    Vue.prototype.$confirm = MessageBox.confirm;
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <dialogUpload :dialog-visible="dialogVisible" @complete="onComplete" />
+    <dialogUpload :visible="dialogVisible" @complete="onComplete" @cancel="dialogVisible = false" />
   </div>
 </template>
 
