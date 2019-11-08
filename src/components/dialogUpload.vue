@@ -18,30 +18,12 @@
 </template>
 
 <script>
-/* eslint-disable */
-// import Vue from 'Vue'
-// import {
-//   Dialog,
-//   Button,
-//   Upload,
-//   MessageBox,
-// } from 'element-ui';
-// Vue.use(Dialog);
-// Vue.use(Button);
-// Vue.use(Upload);
-// Vue.prototype.$confirm = MessageBox.confirm;
 export default {
   name: "dialogUpload",
   data() {
     return {
       fileList:[]
     };
-  },
-  components:{
-    // Dialog,
-    // Button,
-    // Upload,
-    // MessageBox.confirm
   },
   props: {
     dialogVisible: {

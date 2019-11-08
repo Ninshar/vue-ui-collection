@@ -2,9 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 
 
-import dialogUpload from '../index.js'
+// import collection from '../index.js'
+import collection from '../dist/vue-ui-collection.umd.min.js'
+import '../dist/vue-ui-collection.css';
 
-Vue.use(dialogUpload);
+Vue.use(collection);
 
 Vue.config.productionTip = false
 

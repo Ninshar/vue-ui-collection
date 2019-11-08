@@ -1,6 +1,6 @@
 {
   "name": "vue-ui-collection",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "main": "dist/vue-ui-collection.umd.min.js",
   "description": "vue ui 的集合",
   "scripts": {
@@ -24,6 +24,7 @@
     "@vue/cli-service": "^4.0.0",
     "babel-eslint": "^10.0.3",
     "babel-plugin-component": "^1.1.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-es2015": "^6.24.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
