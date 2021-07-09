@@ -1,6 +1,6 @@
 {
   "name": "vue-ui-collection",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "dist/vue-ui-collection.umd.min.js",
   "description": "vue ui 的集合",
   "scripts": {
