@@ -34,6 +34,7 @@ export default {
   },
   methods: {
     handleChange(file, fileList){
+      console.log(1111)
       this.fileList = fileList;
     },
     beforeRemove(file) {

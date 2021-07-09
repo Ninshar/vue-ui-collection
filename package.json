@@ -28,6 +28,7 @@
     "babel-preset-es2015": "^6.24.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "release-it": "^14.10.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
